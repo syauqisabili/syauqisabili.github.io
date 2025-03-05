@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        gradient: 'gradient 8s linear infinite',
+                        'fade-in-up': 'fade-in-up 0.5s ease-out'
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        'fade-in-up': {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Syauqi Sabili</title>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+<nav class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 transition-colors duration-300">
+    <div class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <span class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">Syauqi Sabili</span>
+        <div class="flex items-center space-x-4">
+            <div class="hidden md:flex space-x-4">
+                <a href="https://github.com/syauqisabili" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/syauqisabili" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+            <button id="darkModeToggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                <svg class="w-6 h-6 dark:hidden text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+                <svg class="w-6 h-6 hidden dark:block text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<main class="max-w-4xl mx-auto px-4">
+    <section class="min-h-screen flex items-center justify-center">
+        <div class="text-center animate-fade-in-up">
+            <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden ring-4 ring-purple-600 dark:ring-purple-500">
+                <img src="https://placehold.co/400x400" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text animate-gradient">Hello, I'm Syauqi Sabili</h1>
+            <p class="text-xl text-gray-700 dark:text-gray-300 mb-2">Software Engineer</p>
+            <p class="text-base text-gray-600 dark:text-gray-400 mb-8 max-w-lg mx-auto text-center">
+                3 years of professional experience in payment software development with a can-do attitude and a passion for lifelong learning. Proficiency with ISO8583, EMV, and POS apps. Proficient in embedded C/C++ programming for microcontroller interfacing. Skilled in GUI using Qt. Currently focusing on backend services using Go.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <a href="#projects" class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">View Projects</a>
+                <a href="#resume" class="px-6 py-3 border border-purple-600 text-purple-600 dark:text-purple-400 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors">Resume</a>
+                <a href="#contact" class="px-6 py-3 border border-purple-600 text-purple-600 dark:text-purple-400 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="min-h-screen py-20">
+        <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="group relative overflow-hidden rounded-xl bg-purple-50 dark:bg-gray-800 p-6 hover:shadow-xl transition-all duration-300 cursor-pointer" onclick="openProject('project1')">
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                <div class="relative">
+                    <h3 class="text-xl font-semibold mb-2">E-Commerce Dashboard</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">A modern dashboard for managing online stores with real-time analytics.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">React</span>
+                        <span class="px-2 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Node.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl bg-pink-50 dark:bg-gray-800 p-6 hover:shadow-xl transition-all duration-300 cursor-pointer" onclick="openProject('project2')">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-600/20 to-purple-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                <div class="relative">
+                    <h3 class="text-xl font-semibold mb-2">AI Chat Application</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">An intelligent chatbot platform powered by machine learning.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Python</span>
+                        <span class="px-2 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">TensorFlow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center">
+        <div class="bg-white dark:bg-gray-900 max-w-4xl w-full mx-4 rounded-xl shadow-2xl overflow-hidden">
+            <div class="relative">
+                <button onclick="closeProject()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <div id="projectContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Templates (Hidden) -->
+    <template id="project1">
+        <div class="p-6">
+            <div class="aspect-video w-full rounded-lg overflow-hidden mb-6">
+                <img src="https://placehold.co/1920x1080" alt="E-Commerce Dashboard" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">E-Commerce Dashboard</h3>
+            <div class="prose dark:prose-invert max-w-none">
+                <p class="text-lg mb-4">A comprehensive dashboard solution for e-commerce businesses, providing real-time analytics and inventory management.</p>
+                <h4 class="text-xl font-semibold mb-2">Key Features</h4>
+                <ul class="list-disc list-inside mb-4 space-y-2">
+                    <li>Real-time sales and revenue tracking</li>
+                    <li>Inventory management system</li>
+                    <li>Customer behavior analytics</li>
+                    <li>Automated reporting system</li>
+                </ul>
+                <h4 class="text-xl font-semibold mb-2">Technologies Used</h4>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">React</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Node.js</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">MongoDB</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Tailwind CSS</span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                        </svg>
+                        View Code
+                    </a>
+                    <a href="#" class="inline-flex items-center px-4 py-2 border border-purple-600 text-purple-600 dark:text-purple-400 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                        Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="project2">
+        <div class="p-6">
+            <div class="aspect-video w-full rounded-lg overflow-hidden mb-6">
+                <img src="https://placehold.co/1920x1080" alt="AI Chat Application" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">AI Chat Application</h3>
+            <div class="prose dark:prose-invert max-w-none">
+                <p class="text-lg mb-4">An intelligent chatbot platform that leverages machine learning to provide human-like conversations and assistance.</p>
+                <h4 class="text-xl font-semibold mb-2">Key Features</h4>
+                <ul class="list-disc list-inside mb-4 space-y-2">
+                    <li>Natural language processing</li>
+                    <li>Multi-language support</li>
+                    <li>Context-aware responses</li>
+                    <li>Custom training capabilities</li>
+                </ul>
+                <h4 class="text-xl font-semibold mb-2">Technologies Used</h4>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Python</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">TensorFlow</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">FastAPI</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Vue.js</span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                        </svg>
+                        View Code
+                    </a>
+                    <a href="#" class="inline-flex items-center px-4 py-2 border border-purple-600 text-purple-600 dark:text-purple-400 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                        Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <section id="resume" class="min-h-screen py-20">
+        <h2 class="text-3xl font-bold mb-12 text-center">Resume</h2>
+        <div class="max-w-3xl mx-auto space-y-12">
+            <!-- Education -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold text-purple-600 dark:text-purple-400">Education</h3>
+                <div class="space-y-4">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-lg font-semibold">University Name</h4>
+                                <p class="text-purple-600 dark:text-purple-400">Bachelor of Computer Science</p>
+                                <p class="text-gray-700 dark:text-gray-300 mt-2">• Relevant coursework in Web Development, Data Structures, and Algorithms</p>
+                                <p class="text-gray-700 dark:text-gray-300">• Dean's List for 4 consecutive semesters</p>
+                            </div>
+                            <span class="text-gray-500 dark:text-gray-400">2020 - 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold text-purple-600 dark:text-purple-400">Experience</h3>
+                <div class="space-y-4">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-lg font-semibold">Software Developer</h4>
+                                <p class="text-purple-600 dark:text-purple-400">Company Name</p>
+                                <p class="text-gray-700 dark:text-gray-300 mt-2">• Developed and maintained web applications using modern technologies</p>
+                                <p class="text-gray-700 dark:text-gray-300">• Collaborated with cross-functional teams to deliver high-quality solutions</p>
+                                <p class="text-gray-700 dark:text-gray-300">• Improved application performance by 40%</p>
+                            </div>
+                            <span class="text-gray-500 dark:text-gray-400">2024 - Present</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-lg font-semibold">Web Development Intern</h4>
+                                <p class="text-purple-600 dark:text-purple-400">Startup Name</p>
+                                <p class="text-gray-700 dark:text-gray-300 mt-2">• Built responsive web interfaces using React and Tailwind CSS</p>
+                                <p class="text-gray-700 dark:text-gray-300">• Implemented new features and fixed bugs in existing applications</p>
+                            </div>
+                            <span class="text-gray-500 dark:text-gray-400">Summer 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold text-purple-600 dark:text-purple-400">Skills</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 text-center hover:shadow-xl transition-shadow">
+                        <span class="text-gray-800 dark:text-gray-200">C/C++</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 text-center hover:shadow-xl transition-shadow">
+                        <span class="text-gray-800 dark:text-gray-200">Python</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 text-center hover:shadow-xl transition-shadow">
+                        <span class="text-gray-800 dark:text-gray-200">Go</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 text-center hover:shadow-xl transition-shadow">
+                        <span class="text-gray-800 dark:text-gray-200">Typescript</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 text-center hover:shadow-xl transition-shadow">
+                        <span class="text-gray-800 dark:text-gray-200">TailwindCSS</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 text-center hover:shadow-xl transition-shadow">
+                        <span class="text-gray-800 dark:text-gray-200">Flutter</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Resume Button -->
+            <div class="text-center pt-8">
+                <a href="#" class="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="min-h-screen py-20">
+        <h2 class="text-3xl font-bold mb-12 text-center">Get in Touch</h2>
+        <form class="max-w-lg mx-auto space-y-6" onsubmit="handleSubmit(event)">
+            <div>
+                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                <input type="text" id="name" name="name" required
+                       class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none transition-colors"
+                       placeholder="Your name">
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                <input type="email" id="email" name="email" required
+                       class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none transition-colors"
+                       placeholder="your@email.com">
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" required
+                          class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none transition-colors resize-none"
+                          placeholder="Your message"></textarea>
+            </div>
+            <button type="submit"
+                    class="w-full px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                Send Message
+            </button>
+        </form>
+    </section>
+</main>
+
+<footer class="bg-gray-50 dark:bg-gray-800/50 py-8 mt-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+                <span class="sr-only">GitHub</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300"> 2025 Portfolio. Built with passion.</p>
+    </div>
+</footer>
+<script src="./build/index.js"></script>
+</body>
+</html>
