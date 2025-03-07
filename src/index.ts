@@ -81,6 +81,6 @@ function handleSubmit(event: SubmitEvent) {
     const data = Object.assign({}, ...Array.from(formData.entries()));
 
     // For demo purposes, just show an alert
-    alert('Message sent! (Demo)\n\nName: ' + data.name + '\nEmail: ' + data.email + '\nMessage: ' + data.message);
+    alert('Message sent! \n\nName: ' + data.name + '\nEmail: ' + data.email + '\nMessage: ' + data.message);
     (event.target as HTMLFormElement).reset();
 }
