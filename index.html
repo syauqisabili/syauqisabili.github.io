@@ -83,7 +83,7 @@
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 <div class="relative">
                     <h3 class="text-xl font-semibold mb-2">ELCAS Maritime System</h3>
-                    <p class="text-gray-700 dark:text-gray-300 mb-4">A modern dashboard for managing online stores with real-time analytics.</p>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">A scalable backend system for collecting, processing, and streaming real-time maritime data from AIS, Radar, and GPS sources.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Go</span>
                         <span class="px-2 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">MongoDB</span>
@@ -93,8 +93,8 @@
             <div class="group relative overflow-hidden rounded-xl bg-pink-50 dark:bg-gray-800 p-6 hover:shadow-xl transition-all duration-300 cursor-pointer" onclick="openProject('project2')">
                 <div class="absolute inset-0 bg-gradient-to-r from-pink-600/20 to-purple-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 <div class="relative">
-                    <h3 class="text-xl font-semibold mb-2">AccuEASE</h3>
-                    <p class="text-gray-700 dark:text-gray-300 mb-4">An intelligent chatbot platform powered by machine learning.</p>
+                    <h3 class="text-xl font-semibold mb-2">AccuEASE for Accurate Online</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">A Desktop application tailored for accountants who frequently handle data using Accurate Online.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Python</span>
                         <span class="px-2 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Qt</span>
@@ -122,26 +122,26 @@
     <template id="project1">
         <div class="p-6">
             <div class="aspect-video w-full rounded-lg overflow-hidden mb-6">
-                <img src="https://placehold.co/1920x1080" alt="E-Commerce Dashboard" class="w-full h-full object-cover">
+                <img src="../portfolio/assets/elcas-backend.jpg" alt="Marine Data Processing System" class="w-full h-full object-cover">
             </div>
-            <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">E-Commerce Dashboard</h3>
+            <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">Real-Time Marine Data Processing System</h3>
             <div class="prose dark:prose-invert max-w-none">
-                <p class="text-lg mb-4">A comprehensive dashboard solution for e-commerce businesses, providing real-time analytics and inventory management.</p>
+                <p class="text-lg mb-4">Designed to collect, process, and deliver real-time maritime data from multiple remote sources. The system leverages a gRPC-based Pub/Sub message broker to ensure efficient and scalable data streaming.</p>
                 <h4 class="text-xl font-semibold mb-2">Key Features</h4>
                 <ul class="list-disc list-inside mb-4 space-y-2">
-                    <li>Real-time sales and revenue tracking</li>
-                    <li>Inventory management system</li>
-                    <li>Customer behavior analytics</li>
-                    <li>Automated reporting system</li>
+                    <li>Streaming Receivers collect data via UDP or Serial from AIS, Radar, and GPS sources.</li>
+                    <li>Pub/Sub Messaging uses gRPC-based services for seamless real-time data distribution.</li>
+                    <li>API Gateway provides a unified gRPC interface for users.</li>
+                    <li>Supports scalable, fault-tolerant data processing for mission-critical applications.</li>
                 </ul>
-                <h4 class="text-xl font-semibold mb-2">Technologies Used</h4>
+                <h4 class="text-xl font-semibold mb-2">Technology Stack</h4>
                 <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">React</span>
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Node.js</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Go</span>
                     <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">MongoDB</span>
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Tailwind CSS</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Redis</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Docker</span>
                 </div>
-                <div class="flex gap-4">
+                <!-- <div class="flex gap-4">
                     <a href="#" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
@@ -154,7 +154,7 @@
                         </svg>
                         Live Demo
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </template>
@@ -162,24 +162,22 @@
     <template id="project2">
         <div class="p-6">
             <div class="aspect-video w-full rounded-lg overflow-hidden mb-6">
-                <img src="https://placehold.co/1920x1080" alt="AI Chat Application" class="w-full h-full object-cover">
+                <img src="../portfolio/assets/accuease-login.jpg" alt="AccuEASE" class="w-full h-full object-cover">
             </div>
-            <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">AI Chat Application</h3>
+            <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">Effortless Data Mastery Application</h3>
             <div class="prose dark:prose-invert max-w-none">
-                <p class="text-lg mb-4">An intelligent chatbot platform that leverages machine learning to provide human-like conversations and assistance.</p>
+                <p class="text-lg mb-4">Enhance efficiency with this advanced automation tool, built to streamline data processing and integration for Accurate Online (AOL).</p>
                 <h4 class="text-xl font-semibold mb-2">Key Features</h4>
                 <ul class="list-disc list-inside mb-4 space-y-2">
-                    <li>Natural language processing</li>
-                    <li>Multi-language support</li>
-                    <li>Context-aware responses</li>
-                    <li>Custom training capabilities</li>
+                    <li><b>ITEM ADJUSTMENT</b>, easily adjust stock IN and OUT with a single click.</li>
+                    <li><b>ITEM CODE CHANGE</b>, quickly update or modify item codes for better inventory management.</li>
                 </ul>
                 <h4 class="text-xl font-semibold mb-2">Technologies Used</h4>
                 <div class="flex flex-wrap gap-2 mb-6">
                     <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Python</span>
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">TensorFlow</span>
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">FastAPI</span>
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Vue.js</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Qt</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Typescript</span>
+                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">TailwindCSS</span>
                 </div>
                 <div class="flex gap-4">
                     <a href="#" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
