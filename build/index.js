@@ -47,7 +47,7 @@ function closeProject() {
     if (modal) {
         modal.classList.add('hidden');
         modal.classList.remove('flex');
-        document.body.style.overflow = '';
+        document.body.style.overflow = 'auto';
     }
 }
 if (modal) {
