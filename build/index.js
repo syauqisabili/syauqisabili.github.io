@@ -73,3 +73,26 @@ function handleSubmit(event) {
     alert('Message sent! (Demo)\n\nName: ' + data.name + '\nEmail: ' + data.email + '\nMessage: ' + data.message);
     event.target.reset();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.slider-image');
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('visible', i === index);
+            img.classList.toggle('hidden', i !== index);
+        });
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    // Start the automatic slider
+    setInterval(nextImage, 3000); // Change image every 3 seconds
+
+    // Show the first image initially
+    showImage(currentIndex);
+});
